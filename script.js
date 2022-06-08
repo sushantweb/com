@@ -1,4 +1,3 @@
-
 function func1() {
     document.getElementById('star01').style.color = 'blue';
     document.getElementById('star02').style.color = 'black';
@@ -50,12 +49,15 @@ setInterval(() => {
 setInterval(() => {
     let e =  new Date()
     document.getElementById('date').innerHTML= e.toDateString()
-//   if (document.getElementById('main').click()) {
-      
-    //   } 
-    
-}, 300);
+    //   if (document.getElementById('main').click()) {
+        
+        //   } 
+    }, 300);
 
+function age(){
+    let e =  new Date()
+    document.getElementsByTagName('age')[0].innerHTML=e.getFullYear()-2008
+}
 
 
 // function otpt() {
@@ -74,9 +76,9 @@ function mrd(){
     document.getElementById('mrd').innerHTML=document.getElementById('klm').innerHTML
     
 }
-// function play() {
-//     document.getElementById('bio').innerHTML=document.getElementById('vcsv').innerHTML
-// }
+function play() {
+    document.getElementById('bio').innerHTML=document.getElementById('vcsv').innerHTML
+}
 function main(){
-    document.getElementById('bio').innerHTML=document.getElementsByTagName('header')[0].innerHTML
+    document.getElementsByTagName('header')[0].innerHTML()=document.getElementById('main').innerHTML()
 }
