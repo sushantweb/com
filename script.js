@@ -64,6 +64,7 @@ function age(){
     var year = age_dt.getUTCFullYear();    
     var age = Math.abs(year - 1970);
 document.getElementById("aaggee").innerHTML = age
+document.getElementById("aaggeec").innerHTML = age-5
 }
 
 
