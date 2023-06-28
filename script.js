@@ -4,8 +4,8 @@ setInterval(
     var age_dt = new Date(month_diff);   
     var year = age_dt.getUTCFullYear();    
     var age = Math.abs(year - 1970);
-alert(age)
-}, 1000);
+document.getElementById("aaggee").innerHTML = age
+, 1000);
 
 function func1() {
     document.getElementById('star01').style.color = 'blue';
