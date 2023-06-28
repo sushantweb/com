@@ -55,17 +55,15 @@ setInterval(() => {
 setInterval(() => {
     document.getElementsByTagName('h2')[0].innerHTML='About Sushant Naik'
 }, 3000);
-setInterval(() => {
-    let e =  new Date()
-    document.getElementById('date').innerHTML= e.toDateString()
-    //   if (document.getElementById('main').click()) {
-        
-        //   } 
-    }, 300);
+
 
 function age(){
-    let e =  new Date()
-    document.getElementsByTagName('age')[0].innerHTML=e.getFullYear()-2008
+       var dob = new Date("01/12/2008");    
+    var month_diff = Date.now() - dob.getTime();   
+    var age_dt = new Date(month_diff);   
+    var year = age_dt.getUTCFullYear();    
+    var age = Math.abs(year - 1970);
+document.getElementById("aaggee").innerHTML = age
 }
 
 
