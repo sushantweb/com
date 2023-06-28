@@ -1,6 +1,4 @@
-setInterval(
-   age()
-, 1000);
+
 
 function func1() {
     document.getElementById('star01').style.color = 'blue';
@@ -52,15 +50,6 @@ setInterval(() => {
 }, 3000);
 
 
-function age(){
-       var dob = new Date("01/12/2008");    
-    var month_diff = Date.now() - dob.getTime();   
-    var age_dt = new Date(month_diff);   
-    var year = age_dt.getUTCFullYear();    
-    var age = Math.abs(year - 1970);
-document.getElementById("aaggee").innerHTML = age
-document.getElementById("aaggeec").innerHTML = age-5
-}
 
 
 // function otpt() {
