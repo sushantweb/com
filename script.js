@@ -1,4 +1,4 @@
-setInterval(function ()  
+setInterval(
     var dob = new Date("01/12/2008");    
     var month_diff = Date.now() - dob.getTime();   
     var age_dt = new Date(month_diff);   
